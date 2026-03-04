@@ -8,3 +8,8 @@ v.01 - Conceptos de orientación a Objetos: Clase, objeto (o instancia) y métod
 - Explicación del concepto de clase y objeto.
 - Creación de un método constructor en la clase Monster.
 - Ejemplo de creación de dos objetos de tipo "Monster" en la clase SpaceInvaders.
+
+v.02 - Acciones o métodos de los objetos de una clase
+- Creación del método disparar() de la clase Monster
+- Utilización del método disparar() desde la clase SpaceInvaders, creando un bucle infinito y observando como las
+instancias de Monster disparan en función a su probabilidad.
