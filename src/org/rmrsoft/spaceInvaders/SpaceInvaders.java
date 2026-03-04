@@ -9,34 +9,22 @@ public class SpaceInvaders {
      * @param args
      */
     static void main(String[] args) {
-        // Voy a crear un monstruo.
-        Monster m1 = new Monster();
+        // Voy a crear un monstruo con un constructor que asigna propiedades
+        Monster m1 = new Monster(50, 60, "monsterImg01.png", "m1", 75);
 
-        // Asigno propiedades al monstruo creado.
-        m1.x = 50;
-        m1.y = 62;
-        m1.img = "monsterImg01.png";
-        m1.name = "m1";
-        m1.probabilidadDisparo = 75;
 
         // Creo un nuevo monstruo.
-        Monster m2 = new Monster();
-
-        // Asigno propiedades al monstruo creado.
-        m2.x = 100;
-        m2.y = 120;
-        m2.img = "monsterImg02.png";
-        m2.name = "m2";
-        m2.probabilidadDisparo = 10;
+        Monster m2 = new Monster(100, 120, "monsterImg02.png", "m2", 10);
 
         // Muestro los monstruos.
-        System.out.println("Monster m1: " + m1.name + " x: " + m1.x + " y: " + m1.y + " img: " + m1.img);
-        System.out.println("Monster m2: " + m2.name + " x: " + m2.x + " y: " + m2.y + " img: " + m2.img);
+        System.out.println(m1.toString());
+        System.out.println(m2.toString());
+
 
         // Bucle infinito que hace que los monstruos disparen eternamente
         while (true) {
-            m1.disparar();
-            m2.disparar();
+            m1.dispara();
+            m2.dispara();
         }
     }
 }
