@@ -18,18 +18,18 @@ public class Monster {
 
     /**
      * Constructor más completo, con todas las propiedades del objeto
-     * @param newX
-     * @param newY
-     * @param newImg
-     * @param newName
-     * @param newProb
+     * @param x
+     * @param y
+     * @param img
+     * @param name
+     * @param probabilidadDisparo
      */
-    public Monster(int newX, int newY, String newImg, String newName, int newProb) {
-        x = newX;
-        y = newY;
-        img = newImg;
-        name = newName;
-        probabilidadDisparo = newProb;
+    public Monster(int x, int y, String img, String name, int probabilidadDisparo) {
+        this.x = x;
+        this.y = y;
+        this.img = img;
+        this.name = name;
+        this.probabilidadDisparo = probabilidadDisparo;
     }
 
     // Acciones de cada monstruo
@@ -64,4 +64,45 @@ public class Monster {
         return "Nombre: " + name + " - x: " + x + " - y: " + y + " - img: " + img + " - ProbabilidadDisparo: " + probabilidadDisparo;
     }
 
+    // Getters y Setters
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getProbabilidadDisparo() {
+        return probabilidadDisparo;
+    }
+
+    public void setProbabilidadDisparo(int probabilidadDisparo) {
+        this.probabilidadDisparo = probabilidadDisparo;
+    }
 }
